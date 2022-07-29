@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../assets/css/gallery.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="gallery.html" ><i class="fa fa-refresh" name="Refresh"></i></a>
+    <div class="dropdown">
+        <button class="dropbtn">
+            <i class="fa fa-bars" name="Menu"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../index.html">Start</a>
+            <a href="homepage.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+    </div>
+        <img src="../assets/images/logo.png" alt="logo" class="logoimage">
+        <input type="text" placeholder="Search for Places"><i class="fa fa-search" name="Search"></i>
+        <a href="signin.html" style="float:right" class="button">Sign In</a>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="../assets/images/pc1.jpg" alt="Presenditial Cafe" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../assets/images/ms1.jpg" alt="Hotel Mystic Mountain" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../assets/images/fl2.jpg" alt="Flavours Cafe" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../assets/images/ch1.jpg" alt="The Chiya Ghar" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<div class="video">
+  <video width="320" height="240" controls>
+    <source src="../assets/images/chiya.mp4" type="video/mp4">
+    <source src="../assets/images/chiya.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <video width="320" height="240" controls>
+    <source src="../assets/images/flav.mp4" type="video/mp4">
+    <source src="../assets/images/flav.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <video width="320" height="240" controls>
+    <source src="../assets/images/pre.mp4" type="video/mp4">
+    <source src="../assets/images/pre.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <video width="320" height="240" controls>
+    <source src="../assets/images/mysti.mp4" type="video/mp4">
+    <source src="../assets/images/mysti.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+</body>
+</html>

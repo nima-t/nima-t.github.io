@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1140px, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="../assets/css/css.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+<div class="header">
+  <img class="logoimage" src="../assets/images/fast food.png" alt="logo">
+  <p class="p1">For every food lovers out there</p>
+</div>
+
+<div class="topnav">
+    <a href="#"><i class="fa fa-refresh" name="Refresh"></i></a>
+    <div class="dropdown">
+        <button class="dropbtn">
+            <i class="fa fa-bars" name="Menu"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="../index.html">Start</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+    </div>
+        <img src="../assets/images/logo.png" width="150px" alt="logo" class="logoimage">
+        <input type="text" placeholder="Search for Places"><i class="fa fa-search" name="Search"></i>
+        <a href="signin.html" style="float:right" class="button">Sign In</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Chiya Spot</h2>
+      <h5>Fresh in Town, July 29, 2022</h5><br>
+      <img id="myImg" src="../assets/images/chiya.jpeg" alt="The Chiya Spot" style="width:100%;max-width:300px">
+      <img id="myImg" src="../assets/images/chiya2.jpg" alt="The Chiya Spot" style="width:100%;max-width:300px">
+      <img id="myImg" src="../assets/images/chiya1.jpg" alt="The Ciya Spot" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+         </div>
+      <p>Review..</p>
+      <p>Located on the way to United College this is a pretty place with peaceful environment. It’s a perfect place to hangout with friends and for a date too. They have board games as well. Talking about the masala tea , it was okay-ish.</p>
+    </div>
+    <div class="card">
+      <h2>Flavours</h2>
+      <h5>Place to Chill out this summer, July 27, 2017</h5>
+      <img id="myImg" src="../assets/images/fl1.jpg" alt="Flavors" style="width:100%;max-width:300px">
+      <img id="myImg" src="../assets/images/fl4.jpg" alt="Flavors" style="width:100%;max-width:300px">
+      <img id="myImg" src="../assets/images/fl2.jpg" alt="Flavors" style="width:100%;max-width:300px">
+      <p>Review..</p>
+      <p>Flavor's Cafe & Restaurant is located at Boudha, Kathmandu. The place is great to hangout with friends, for family gatherings, to celebrate birthdays and romantic dates. The place is very ambient and you can click good pictures as there are aesthetic photogenic areas.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Us</h2><br>
+      <a href="aboutus.html"><img src="../assets/images/aboutus.jpg" alt="AboutUs" height="150px" width="300px">
+        </a><br>
+      <p>FoodHunt - Redefine the best website to update yourself on...<a href="aboutus.html">more</a>
+      </p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <a href="#"><img src="../assets/images/pc1.jpg" alt="Popular" style="width:100%;max-width:300px"></a>
+      <p class="s1">Presenditial Cafe</p>
+      <a href="#"><img src="../assets/images/ms1.jpg" alt="Popular" style="width:100%;max-width:300px"></a>
+      <p class="s1">Hotel Mystic Mountain</p>
+    </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;
+      <a href="#"><i class="fa fa-pinterest-p"></i></a>&nbsp;
+      <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;
+      <a href="#"><i class="fa fa-flickr"></i></a>&nbsp;
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+
+
+<div class="footer">
+    <img src="../assets/images/logo.png" class="logoimage">&nbsp;&nbsp; 
+    <a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;&nbsp;
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>&nbsp;&nbsp;
+    <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+    <a href="#"><i class="fa fa-flickr"></i></a>&nbsp;&nbsp;
+    <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+    <p class="p3">Copyright&copy; FoodHunt. All Rights Reserved</p>
+    <p class="p2">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+</div>
+
+</body>
+</html>
+
+

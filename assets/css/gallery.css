@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: #037c97;
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  .video{
+    padding: 40px;
+    margin-left: 50px;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .topnav {
+    overflow:hidden;
+    background-color: #333;
+    width: 100%;
+}
+  
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+  
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav input[type=text] {
+    padding: 15px 20px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+  
+.topnav .mainmenu {
+    text-align: left;
+    margin-left: 24.3%;
+    margin-right: 12%;
+    margin-top: 0.5%;
+    margin-bottom: 0px;
+}
+  
+.topnav .mainmenu a {
+    margin-left: 4.3%;
+    margin-top: 0.5%;
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+ .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    }
+    
+ .topnav input[type=text] {
+    border: 1px solid #ccc;  
+    }
+}
+
+.topnav .button{
+    border: none;
+    cursor: grabbing;
+    border-radius: 50px;
+    color: black;
+    background-color: #e18b30;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-right: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.topnav .button:hover{
+    background-color: #037c97;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #393838;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+.logoimage {
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

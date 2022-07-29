@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+<link href="../css/contactus.css" rel="stylesheet" type="text/css"/>
+<script src="../assets/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="logoimage" src="../assets/images/fast food.png" alt="logo">
+        <p class="p1">For every food lovers out there</p>
+    </div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Any queries to talk about then leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="../assets/images/food.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="homepage.html" name="myForm" onsubmit="return(validateForm())" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select name="country">
+          <option value="1">Nepal</option>
+          <option value="2">Australia</option>
+          <option value="3">Canada</option>
+          <option value="4">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
